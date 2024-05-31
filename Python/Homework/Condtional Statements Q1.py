@@ -1,4 +1,4 @@
-# to check if a number is odd using if-else
+# Question 1 :- to check if a number is odd using if-else
 
 num = int(input("Enter a number: "))
 
