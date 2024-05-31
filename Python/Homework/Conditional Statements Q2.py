@@ -1,4 +1,4 @@
-# to assign grade based on score (0-100) using nested if-else
+# Question 2:- to assign grade based on score (0-100) using nested if-else
 
 score = int(input("Enter the score: "))
 
