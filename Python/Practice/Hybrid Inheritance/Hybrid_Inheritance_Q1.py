@@ -13,17 +13,17 @@ class Employee(Person):
         self.department = department
 
     def display(self):
-        Person.display(self)
+        super().display()
         print(f"Employee ID: {self.employee_id}, Department: {self.department}")
 
 class Student(Person):
     def __init__(self, name, age, student_id, course):
-        Person.__init__(self, name, age)
+        super().__init__(name, age)
         self.student_id = student_id
         self.course = course
 
     def display(self):
-        Person.display(self)
+        super().display()
         print(f"Student ID: {self.student_id}, Course: {self.course}")
 
 class Intern(Employee, Student):
@@ -34,7 +34,7 @@ class Intern(Employee, Student):
 
     def display(self):
         super().display()
-        print(f"Student ID: {self.student_id}, Course: {self.course}")
+        #print(f"Student ID: {self.student_id}, Course: {self.course}")
 
 
 # Creating objects and displaying their information
@@ -53,7 +53,7 @@ print("\nIntern Info:")
 intern.display()
 
 """
-Output:-
+Output:- 
 
 Person Info:
 Name: Alice, Age: 30
@@ -68,7 +68,6 @@ Student ID: S456, Course: Computer Science
 
 Intern Info:
 Name: Daisy, Age: 22
-Employee ID: E789, Department: Marketing
 Student ID: S789, Course: Business
-
+Employee ID: E789, Department: Marketing
 """
