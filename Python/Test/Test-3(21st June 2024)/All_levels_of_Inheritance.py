@@ -1,5 +1,5 @@
 """
-Question 1:- Python program demonstrating all types of inheritance
+Question 1:- Python program demonstrating all levels of inheritance
 """
 class A:             # Base class 1
   def show(self):
