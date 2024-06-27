@@ -92,4 +92,4 @@ for i in range(100):
 
 "..... and now we're done!"
 
-st.image("superset photo.jpg", caption="Myself", width= 600)
+#st.image("superset photo.jpg", caption="Myself", width= 600)
